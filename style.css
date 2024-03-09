@@ -520,4 +520,15 @@ body {
     .line {
         height: 150px;
     }
+    #introduction .btn {
+        background-color: #333;
+        color: white;
+    }
+
+    #introduction .btn-primary {
+        color: white;
+        background-color: #005b96;
+        border: 0;
+        border: 2px solid #005b96;
+    }
 }
