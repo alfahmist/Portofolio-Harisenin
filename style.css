@@ -85,7 +85,7 @@ body {
     transition: 0.25s ease-in-out;
 }
 .nav ul li a {
-    color: 333;
+    color: #333;
 }
 
 .nav ul li a:hover {
