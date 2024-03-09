@@ -207,7 +207,7 @@ body {
     width: 500px;
     left: 20px;
     top: 20px;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .left {
@@ -387,7 +387,9 @@ body {
     .skill-card-description {
         font-size: 1rem;
     }
-
+    .section-divider {
+        display: none;
+    }
     .menu-toggle {
         display: flex;
     }
@@ -397,6 +399,7 @@ body {
         height: 40px;
         background-color: #1f63ac;
         position: fixed;
+        z-index: 1;
     }
     .nav ul {
         position: absolute;
@@ -483,14 +486,25 @@ body {
 
     .experience-content {
         max-width: 100%;
-        min-width: 200px;
+        min-width: 300px;
         left: 20px;
         top: 20px;
-        font-size: 0.75rem;
+        font-size: 0.9rem;
+    }
+    #project p {
+        font-size: 1rem;
+        margin: 0;
     }
 
+    #project p:nth-child(3) {
+        margin: 0;
+    }
     .left {
         left: 20px;
         text-align: left;
+    }
+
+    .line {
+        height: 150px;
     }
 }
