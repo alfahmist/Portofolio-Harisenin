@@ -549,4 +549,12 @@ body {
         border: 0;
         border: 2px solid #005b96;
     }
+
+    .nav ul li a.active {
+        color: #005b96;
+    }
+
+    .nav ul li a:hover {
+        color: #005b96;
+    }
 }
