@@ -85,8 +85,9 @@ body {
     transition: 0.25s ease-in-out;
 }
 .nav ul li a {
-    color: #333;
-    font-size: 1rem;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .nav ul li a:hover {
@@ -151,6 +152,7 @@ body {
     justify-content: center;
     padding: 100px;
     min-height: 100vh;
+    margin-top: 50px;
 }
 
 .about-container {
@@ -446,11 +448,11 @@ body {
     }
 
     .nav ul li a:hover {
-        color: #005b96;
+        color: white;
     }
 
     .nav ul li a.active {
-        color: #005b96;
+        color: white;
     }
 
     .nav ul.nav-active {
