@@ -149,7 +149,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 100px;
     min-height: 100vh;
 }
 
@@ -164,36 +164,50 @@ body {
 .about-container {
     width: 100%;
     height: auto;
-}
-.experience-container {
-    margin-top: 50px;
-    max-width: 100%;
     position: relative;
+}
+
+.dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 100%;
+    left: -5px;
+    top: 5px;
 }
 
 .line {
     height: 130px;
     width: 5px;
     background: black;
-    position: relative;
+    position: absolute;
 }
 
+.experience-container {
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-content {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.date {
+    border-left: 5px solid black;
+    padding-left: 10px;
+}
 .line:first-child {
     border-radius: 20px 20px 0 0;
 }
 
 .line:nth-child(2) {
     border-radius: 0 0 20px 20px;
-}
-
-.dot {
-    width: 15px;
-    height: 15px;
-    background: black;
-    border-radius: 100%;
-    position: absolute;
-    left: -5px;
-    top: 20px;
 }
 
 .bold {
@@ -203,18 +217,11 @@ body {
 .date {
     margin-bottom: 10px;
 }
-.experience-content {
-    position: absolute;
-    width: 500px;
-    left: 20px;
-    top: 20px;
-    font-size: 1rem;
-}
 
-.left {
+/* .left {
     left: -520px;
     text-align: right;
-}
+} */
 .summary {
     padding: 10px;
 }
@@ -388,7 +395,8 @@ body {
     #about,
     #skill,
     #contact,
-    #project {
+    #project,
+    #experience {
         padding: 20px;
     }
     #myVideo {
@@ -492,19 +500,17 @@ body {
 
     .experience-container {
         margin-top: 50px;
-        max-width: 60%;
+        max-width: 100%;
         position: relative;
         align-self: start;
-        left: -20px;
     }
 
     .experience-content {
-        max-width: 100%;
-        min-width: 300px;
-        left: 20px;
-        top: 20px;
+        /* left: 20px; */
+        /* top: 20px; */
         font-size: 0.9rem;
     }
+
     #project p {
         font-size: 1rem;
         margin: 0;
@@ -519,7 +525,8 @@ body {
     }
 
     .line {
-        height: 150px;
+        max-height: 150px;
+        max-width: 100%;
     }
     #introduction .btn {
         background-color: #333;
