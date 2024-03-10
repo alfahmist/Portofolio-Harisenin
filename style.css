@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     cursor: default;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 html {
@@ -248,7 +248,8 @@ body {
     justify-content: space-between;
     margin-top: 50px;
     gap: 50px;
-    width: 80%;
+    width: 100%;
+    align-items: center;
 }
 
 .skill-card {
@@ -269,8 +270,9 @@ body {
     flex-direction: row-reverse;
 }
 .skill-row > img {
-    min-width: 100px;
-    max-width: 600px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
 /* Project */
 
@@ -505,6 +507,10 @@ body {
         max-width: 100%;
         position: relative;
         align-self: start;
+    }
+
+    .skill-row > img {
+        max-width: 600px;
     }
 
     .experience-content {
